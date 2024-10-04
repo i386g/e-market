@@ -13,41 +13,44 @@ import "@fontsource-variable/montserrat";
 import "@fontsource/kaushan-script";
 
 import "@mantine/core/styles.css";
+import FarmProfile from "./FarmProfile.tsx";
 import "./index.css";
 import { Layout } from "./layout.tsx";
-import FarmProfile from "./FarmProfile.tsx";
 
 const theme = createTheme({
   /** Your theme override here */
   primaryColor: "green",
 });
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: (
-      <Layout>
-        <App />
-      </Layout>
-    ),
-  },
-  {
-    path: "/*",
-    element: (
-      <Layout>
-        <Navigate to="/" />
-      </Layout>
-    ),
-  },
-  {
-    path: "/profile/*",
-    element: (
-      <Layout>
-        <FarmProfile />
-      </Layout>
-    ),
-  },
-]);
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: (
+        <Layout>
+          <App />
+        </Layout>
+      ),
+    },
+    {
+      path: "/*",
+      element: (
+        <Layout>
+          <Navigate to="/" />
+        </Layout>
+      ),
+    },
+    {
+      path: "/profile/*",
+      element: (
+        <Layout>
+          <FarmProfile />
+        </Layout>
+      ),
+    },
+  ],
+  { basename: import.meta.env.BASE_URL }
+);
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
