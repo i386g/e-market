@@ -1,7 +1,10 @@
 import { Button, Flex, Group, TextInput } from "@mantine/core";
 import { Link } from "react-router-dom";
 
+import useScrollToHash from "./useScrollToHash";
+
 const Header = () => {
+  useScrollToHash();
   return (
     <Group p="lg" justify="space-between" gap={0} className="shadow-lg">
       <Group>
@@ -41,15 +44,12 @@ const Header = () => {
         <Link to="/">
           <Button variant="subtle">Home</Button>
         </Link>
-        <a href="#farms">
-          <Button variant="subtle">Farms</Button>
-        </a>
-        <a href="#about">
-          <Button variant="subtle">About</Button>
-        </a>
-        <a>
-          <Button variant="subtle">Contact</Button>
-        </a>
+        <Link to="/#farms">
+          <Button variant="subtle">Our Farms</Button>
+        </Link>
+        <Link to="/#about">
+          <Button variant="subtle">About Us</Button>
+        </Link>
       </Group>
     </Group>
   );

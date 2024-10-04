@@ -1,9 +1,9 @@
 import "./App.css";
 
 import { Button, Card, Group, Image, Stack, Text } from "@mantine/core";
-import { FARMS } from "./common";
 import { useNavigate } from "react-router-dom";
 import About from "./About";
+import { FARMS } from "./common";
 
 function App() {
   const navigate = useNavigate();
