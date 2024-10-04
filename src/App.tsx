@@ -49,8 +49,8 @@ function App() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 w-full ">
-            {FARMS.map((farm) => (
-              <Card shadow="sm" padding="lg" radius="md" withBorder>
+            {FARMS.map((farm, index) => (
+              <Card shadow="sm" padding="lg" radius="md" withBorder key={index}>
                 <Card.Section>
                   <Image className="object-cover h-72" src={farm.farm_image} />
                 </Card.Section>
