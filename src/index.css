@@ -9,3 +9,10 @@ body {
 .kaushan {
   font-family: "Kaushan Script", cursive;
 }
+
+.hero-bg {
+  background-image: url("hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
