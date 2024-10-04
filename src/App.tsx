@@ -1,7 +1,7 @@
 import "./App.css";
 
 import { Button, Card, Group, Image, Stack, Text } from "@mantine/core";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import About from "./About";
 import { FARMS } from "./common";
 
@@ -23,7 +23,7 @@ function App() {
                 await you.
               </div>
               <div className="flex flex-row gap-4">
-                <a href="#farms">
+                <Link to="/#farms">
                   <Button
                     color="#000000"
                     radius="md"
@@ -32,12 +32,12 @@ function App() {
                   >
                     View Farms
                   </Button>
-                </a>
-                <a href="#about">
+                </Link>
+                <Link to="/#about">
                   <Button variant="light" color="white" radius="md" size="md">
                     About Us
                   </Button>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
