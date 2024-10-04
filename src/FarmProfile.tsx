@@ -29,6 +29,7 @@ const FarmProfile = () => {
           </h1>
         </div>
       </div>
+
       <section className="p-10 px-6">
         <div className="text-center font-bold text-4xl lg:text-6xl text-green-800">
           Our Story
@@ -39,8 +40,9 @@ const FarmProfile = () => {
           </p>
         </div>
       </section>
+
       <section className="p-10 px-6 bg-neutral-50">
-        <div className="flex items-start p-10 gap-10 h-full">
+        <div className="flex flex-col lg:flex-row items-start p-10 gap-10 h-full">
           <div className="flex flex-col h-full">
             <div className="font-bold text-4xl text-green-800 mb-6">
               Farming Methods and Techniques
@@ -57,6 +59,7 @@ const FarmProfile = () => {
           />
         </div>
       </section>
+
       <section className="p-10 px-6">
         <div className="text-center font-bold text-4xl lg:text-6xl text-green-800">
           Our Products
@@ -66,8 +69,8 @@ const FarmProfile = () => {
             {farmDetails.farm_details.farm_seasonal_description}
           </p>
         </div>
-        <div className="flex items-center justify-center p-10 gap-10 w-full">
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 w-full px-40 py-10">
+        <div className="flex items-center justify-center p-8 gap-8 w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 w-full lg:w-2/3">
             {farmDetails.farm_details.farm_seasonal_products.map((item) => (
               <Card shadow="sm" padding="lg" radius="lg" withBorder>
                 <Card.Section>
@@ -84,13 +87,13 @@ const FarmProfile = () => {
           </div>
         </div>
       </section>
-      <section className="p-10 px-40 bg-neutral-50">
-        <div className="flex items-start p-10 gap-20 h-full ">
-          <div className="w-[500px] h-[500px]">
+
+      <section className="p-8 flex flex-row justify-center items-center bg-neutral-50">
+        <div className="flex flex-col lg:flex-row items-start p-8 gap-8">
+          <div className="w-[240px] lg:w-[500px] h-[240px] lg:h-[500px]">
             <ContactImage />
           </div>
-
-          <div className="flex flex-col h-full pt-20 pl-20">
+          <div className="flex flex-col h-full">
             <div className="font-bold text-4xl text-green-800 mb-10">
               Contact Us
             </div>

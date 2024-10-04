@@ -1,4 +1,4 @@
-import { Button, Flex, Group, TextInput } from "@mantine/core";
+import { Button, Flex, Group, Menu, TextInput } from "@mantine/core";
 import { Link } from "react-router-dom";
 
 import useScrollToHash from "./useScrollToHash";
@@ -15,7 +15,7 @@ const Header = () => {
             </div>
           </Link>
           <TextInput
-            className="ml-10 w-full lg:w-[320px] "
+            className="ml-10 w-full lg:w-[320px] hidden lg:block"
             placeholder="Search here..."
             leftSection={
               <svg
@@ -41,15 +41,35 @@ const Header = () => {
         </Flex>
       </Group>
       <Group>
-        <Link to="/">
-          <Button variant="subtle">Home</Button>
-        </Link>
-        <Link to="/#farms">
-          <Button variant="subtle">Our Farms</Button>
-        </Link>
-        <Link to="/#about">
-          <Button variant="subtle">About Us</Button>
-        </Link>
+        <Group className="hidden lg:block">
+          <Link to="/">
+            <Button variant="subtle">Home</Button>
+          </Link>
+          <Link to="/#farms">
+            <Button variant="subtle">Our Farms</Button>
+          </Link>
+          <Link to="/#about">
+            <Button variant="subtle">About Us</Button>
+          </Link>
+        </Group>
+        <div className="block lg:hidden">
+          <Menu shadow="md" width={200}>
+            <Menu.Target>
+              <Button variant="subtle">Menu</Button>
+            </Menu.Target>
+            <Menu.Dropdown>
+              <Menu.Item component={Link} to="/">
+                Home
+              </Menu.Item>
+              <Menu.Item component={Link} to="/#farms">
+                Our Farms
+              </Menu.Item>
+              <Menu.Item component={Link} to="/#about">
+                About Us
+              </Menu.Item>
+            </Menu.Dropdown>
+          </Menu>
+        </div>
       </Group>
     </Group>
   );

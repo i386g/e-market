@@ -1,6 +1,6 @@
 const ContactImage = ({
-  height = "500",
-  width = "500",
+  height,
+  width,
 }: {
   height?: string;
   width?: string;
