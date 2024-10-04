@@ -5,7 +5,7 @@ import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
 
 import "@fontsource-variable/montserrat";
-import "@fontsource/smooch";
+import "@fontsource/kaushan-script";
 
 import "@mantine/core/styles.css";
 import "./index.css";

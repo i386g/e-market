@@ -17,23 +17,14 @@ import {
 function App() {
   return (
     <>
-      <Stack p="xs">
+      <Stack>
         <Group p="xs" justify="space-between">
           <Group>
             <Stack gap={0} align="center">
-              <div className="smooch text-left font-normal text-4xl text-emerald-400">
-                Achi's
-              </div>
-              <div className="text-left font-medium text-sm bg-gradient-to-r from-emerald-500 to-green-600 text-transparent bg-clip-text">
-                Farmer's Market
+              <div className="kaushan text-left font-medium text-4xl text-emerald-600">
+                Market? Market!
               </div>
             </Stack>
-            <Button variant="subtle">Home</Button>
-            <Button variant="subtle">Farms</Button>
-            <Button variant="subtle">About</Button>
-            <Button variant="subtle">Contact</Button>
-          </Group>
-          <Group>
             <TextInput
               placeholder="Search here..."
               leftSection={<IconSearch size={20} />}
@@ -41,7 +32,37 @@ function App() {
               size="md"
             />
           </Group>
+          <Group>
+            <Button variant="subtle">Home</Button>
+            <Button variant="subtle">Farms</Button>
+            <Button variant="subtle">About</Button>
+            <Button variant="subtle">Contact</Button>
+          </Group>
         </Group>
+
+        <div className="h-screen bg-emerald-200 relative">
+          <Image
+            className="object-cover h-screen backdrop-blur-xl"
+            src="/doctor-tinieblas-twX-cWl-8OM-unsplash.jpg"
+          />
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 backdrop-blur-sm p-8 rounded-xl bg-white/20 ">
+            <div className="flex flex-col items-center justify-center gap-4">
+              <div className="text-center font-bold text-4xl text-white">
+                Discover Our Beautiful Farms
+              </div>
+              <div className="text-center font-medium text-xl text-white">
+                Experience nature's bounty at our three unique farms. Fresh
+                produce, stunning landscapes, and unforgettable experiences
+                await you.
+              </div>
+              <div className="flex flex-row gap-4">
+                <Button variant="white" radius="md" size="md">
+                  View Farms
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <Stack p="xl" gap="xl">
           <div className="text-center font-bold text-4xl">Our Farms</div>
