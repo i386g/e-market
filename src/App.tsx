@@ -60,12 +60,12 @@ function App() {
             className="object-cover h-screen backdrop-blur-xl"
             src="/doctor-tinieblas-twX-cWl-8OM-unsplash.jpg"
           />
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 backdrop-blur-sm p-8 rounded-xl bg-white/20 ">
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 backdrop-blur-sm p-8 rounded-xl bg-white/50 ">
             <div className="flex flex-col items-center justify-center gap-4">
-              <div className="text-center font-bold text-4xl text-white">
+              <div className="text-center font-bold text-4xl text-black">
                 Discover Our Beautiful Farms
               </div>
-              <div className="text-center font-medium text-xl text-white">
+              <div className="text-center font-medium text-xl text-black">
                 Experience nature's bounty at our three unique farms. Fresh
                 produce, stunning landscapes, and unforgettable experiences
                 await you.
@@ -73,6 +73,9 @@ function App() {
               <div className="flex flex-row gap-4">
                 <Button variant="white" radius="md" size="md">
                   View Farms
+                </Button>
+                <Button variant="light" color="white" radius="md" size="md">
+                  Learn More
                 </Button>
               </div>
             </div>
