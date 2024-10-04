@@ -34,14 +34,14 @@ const FarmProfile = () => {
         <div className="text-center font-bold text-4xl lg:text-6xl text-green-800">
           Our Story
         </div>
-        <div className="flex items-center p-10 gap-10">
+        <div className="flex items-center p-2 lg:p-8 gap-8">
           <p className="flex-1 p-4 whitespace-break-spaces">
             {farmDetails.farm_details.farm_story}
           </p>
         </div>
       </section>
 
-      <section className="p-10 px-6 bg-neutral-50">
+      <section className="p-2 lg:p-8 bg-neutral-50">
         <div className="flex flex-col lg:flex-row items-start p-10 gap-10 h-full">
           <div className="flex flex-col h-full">
             <div className="font-bold text-4xl text-green-800 mb-6">
@@ -60,7 +60,7 @@ const FarmProfile = () => {
         </div>
       </section>
 
-      <section className="p-10 px-6">
+      <section className="p-2 lg:p-8">
         <div className="text-center font-bold text-4xl lg:text-6xl text-green-800">
           Our Products
         </div>
@@ -88,7 +88,7 @@ const FarmProfile = () => {
         </div>
       </section>
 
-      <section className="p-8 flex flex-row justify-center items-center bg-neutral-50">
+      <section className="p-2 lg:p-8 flex flex-row justify-center items-center bg-neutral-50">
         <div className="flex flex-col lg:flex-row items-start p-8 gap-8">
           <div className="w-[240px] lg:w-[500px] h-[240px] lg:h-[500px]">
             <ContactImage />

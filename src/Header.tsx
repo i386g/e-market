@@ -10,7 +10,7 @@ const Header = () => {
       <Group>
         <Flex gap={0} align="center" justify="center" className="w-full ">
           <Link to="/">
-            <div className="kaushan text-left font-medium text-4xl text-emerald-600 whitespace-nowrap">
+            <div className="kaushan text-left font-medium text-xl lg:text-4xl text-emerald-600 whitespace-nowrap">
               Market? Market!
             </div>
           </Link>
