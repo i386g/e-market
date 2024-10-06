@@ -30,7 +30,7 @@ createRoot(document.getElementById("root")!).render(
             path="/profile/green-valley-organics"
             element={<FarmProfile />}
           />
-          <Route path="/profile/sunrise-acres" element={<FarmProfile />} />
+          <Route path="/profile/hillside-livestock" element={<FarmProfile />} />
           <Route path="/profile/wildflower-meadows" element={<FarmProfile />} />
         </Routes>
         <Footer />

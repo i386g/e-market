@@ -13,10 +13,6 @@ const About = () => {
           />
         </div>
 
-        <div className="kaushan text-center font-bold text-4xl text-emerald-500 hover:text-emerald-600 whitespace-nowrap">
-          Market? Market!
-        </div>
-
         <p className="text-center">
           This platform serves as a vibrant hub for our community of small-scale
           farmers, connecting local growers with consumers. It enables direct
