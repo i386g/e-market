@@ -1,5 +1,6 @@
-import { Button, Flex, Group, Menu, TextInput } from "@mantine/core";
+import { Button, Flex, Group, Image, Menu, TextInput } from "@mantine/core";
 import { Link } from "react-router-dom";
+import AgricartLogo from "./../public/Agricart.png";
 
 import useScrollToHash from "./useScrollToHash";
 
@@ -10,9 +11,7 @@ const Header = () => {
       <Group>
         <Flex gap={0} align="center" justify="center" className="w-full ">
           <Link to="/">
-            <div className="kaushan text-left font-medium text-xl lg:text-4xl text-emerald-600 whitespace-nowrap">
-              Market? Market!
-            </div>
+            <Image src={AgricartLogo} alt="logo" />
           </Link>
           <TextInput
             className="ml-10 w-full lg:w-[320px] hidden lg:block"
